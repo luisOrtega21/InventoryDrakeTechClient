@@ -1,0 +1,11 @@
+﻿@page "/DeleteProduct/{ProductId}"
+@inherits DeleteProductModel
+
+<h3>Delete Product</h3>
+
+<div>
+    <EditForm Model="@Product" OnSubmit="@DeleteProductById">
+        <button type="submit" class="btn btn-success" style="width:150px;">Delete</button>
+        <a href="GetProducts"class="btn btn-primary">Back to list</a>
+    </EditForm>
+</div>
